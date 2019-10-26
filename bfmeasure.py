@@ -185,7 +185,7 @@ def bfscore(gtfile, prfile, palette, weights, threshold=5):
     # cv2.destroyAllWindows()
 
     # return bfscores[1:], np.sum(bfscores[1:])/len(classes[1:])    # Return bfscores, except for background, and per image score
-    return np.mean(bfscores[:-1])# Return bfscores
+    return np.mean(bfscores[1:-1])# Return bfscores
 
 
 if __name__ == "__main__":
