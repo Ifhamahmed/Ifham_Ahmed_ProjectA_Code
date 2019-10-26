@@ -1,7 +1,5 @@
-from comet_ml import Experiment
 import matplotlib
 matplotlib.use("Agg")
-experiment = Experiment("m487mKQwNTqFF4z7aZRX3Xv19", project_name="SegNet", log_env_gpu=True)
 
 # import packages
 from keras.callbacks import CSVLogger, ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
@@ -119,4 +117,4 @@ plt.savefig(args["plot"] + '/' + 'SegNet_plot.png')
 print("[INFO] Saving the model (SegNet)...")
 model_SegNet.save(args["model"] + '/SegNet.model')
 model_SegNet.save_weights(args["model"] + '/' + 'SegNet_weights.h5')
-experiment.end()
+print("[INFO] Process Finished......")

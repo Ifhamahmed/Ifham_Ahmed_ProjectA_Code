@@ -1,8 +1,5 @@
-from comet_ml import Experiment
 import os
 import matplotlib
-
-experiment = Experiment("m487mKQwNTqFF4z7aZRX3Xv19", project_name="Train_FCN", log_env_gpu=True)
 matplotlib.use("Agg")
 
 # import packages
@@ -122,4 +119,3 @@ print("[INFO] Saving the model (FCN)...")
 model_FCN.save(args["model"] + '/FCN.model')
 model_FCN.save_weights(args["model"] + '/' + 'FCN_weights.h5')
 print('[INFO] Process Finished!!')
-experiment.end()

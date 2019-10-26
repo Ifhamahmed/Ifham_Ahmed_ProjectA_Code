@@ -1,6 +1,4 @@
-from comet_ml import Experiment
 import matplotlib
-experiment = Experiment("m487mKQwNTqFF4z7aZRX3Xv19", project_name="UNETConvTrans", log_env_gpu=True)
 matplotlib.use("Agg")
 
 # import packages
@@ -121,4 +119,3 @@ print("[INFO] Saving the model...")
 model.save(args["model"] + '/unet.model')
 model.save_weights(args["model"] + '/' + 'UNET_weights.h5')
 print('[INFO] Process Finished!!')
-experiment.end()

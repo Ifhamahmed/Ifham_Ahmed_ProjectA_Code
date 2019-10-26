@@ -1,7 +1,4 @@
 # import packages
-from comet_ml import Experiment
-
-experiment = Experiment("m487mKQwNTqFF4z7aZRX3Xv19", project_name="AdversarialTraining_FCN", log_env_gpu=True)
 
 from keras.optimizers import SGD, Adam
 from dataLoader import Dataloader
@@ -423,4 +420,3 @@ if __name__ == '__main__':
     # Train Segmentation model using the adversarial network
     Semantic_GAN.train_Adversarial(train_set, test_set, val_set, epochs=EPOCHS, n_batch=BS,
                                    dataset_len=No_of_train_images)
-    experiment.end()
