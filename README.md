@@ -1,7 +1,7 @@
 # Project A Code - Ifham Ahmed 
 Semantic Segmentation Using Adversarial Networks - Project A
 
-Author: Ifham Abdul Latheef Ahmed
+Author: Ifham Abdul Latheef Ahmed/
 Institution: Monash University Malaysia
 
 This repository contains the entire source code for Project A of my final year project.
